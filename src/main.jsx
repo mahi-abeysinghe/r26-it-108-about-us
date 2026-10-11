@@ -21,8 +21,8 @@ const navItems = [
 
 const team = [
   ['Abeysinghe S.A.M.M.', 'IT22081148', 'it22081148@my.sliit.lk', '076 662 5010', '/assets/mahi.jpeg'],
-  ['Dissanayake D.M.S.K', 'IT22291196', 'it22081148@my.sliit.lk', '071 634 8616', '/assets/sachi.jpeg'],
-  ['PESHALA E A P', 'IT2214610', 'it2214610@my.sliit.lk', '076 176 7356', '/assets/peshala.jpeg'],
+  ['Dissanayake D.M.S.K', 'IT22291196', 'it22291196@my.sliit.lk', '071 634 8616', '/assets/sachi.jpeg'],
+  ['PESHALA E A P', 'IT22146410', 'it22146410@my.sliit.lk', '076 176 7356', '/assets/peshala.jpeg'],
   ['LAKSHAN N K T', 'IT22196156', 'it22196156@my.sliit.lk', '071 575 9660', '/assets/Tharindu.jpeg'],
 ]
 
