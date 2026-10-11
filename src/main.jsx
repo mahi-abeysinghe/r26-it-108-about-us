@@ -20,10 +20,10 @@ const navItems = [
 ]
 
 const team = [
-  ['Abeysinghe S.A.M.M.', 'IT22081148', 'it22081148@my.sliit.lk', '076 662 5010'],
-  ['Dissanayake D.M.S.K', 'IT22291196', 'it22081148@my.sliit.lk', '071 634 8616'],
-  ['PESHALA E A P', 'IT2214610', 'it2214610@my.sliit.lk', '076 176 7356'],
-  ['LAKSHAN N K T', 'IT22196156', 'it22196156@my.sliit.lk', '071 575 9660'],
+  ['Abeysinghe S.A.M.M.', 'IT22081148', 'it22081148@my.sliit.lk', '076 662 5010', '/assets/mahi.jpeg'],
+  ['Dissanayake D.M.S.K', 'IT22291196', 'it22081148@my.sliit.lk', '071 634 8616', '/assets/sachi.jpeg'],
+  ['PESHALA E A P', 'IT2214610', 'it2214610@my.sliit.lk', '076 176 7356', '/assets/peshala.jpeg'],
+  ['LAKSHAN N K T', 'IT22196156', 'it22196156@my.sliit.lk', '071 575 9660', '/assets/Tharindu.jpeg'],
 ]
 
 const milestones = [
@@ -118,7 +118,7 @@ function App() {
 
       <section id="banner" className="banner section-shell section-pad"><div className="banner-card"><div className="banner-copy"><span className="eyebrow">06 · The bigger picture</span><h2>Technology should feel<br /><em>human.</em></h2><p>We are building more than a monitoring device. We are building a little more peace of mind into everyday life.</p><button className="button button-light" onClick={() => scrollTo('contact')}>Talk to us <ArrowUpRight size={16} /></button></div><div className="banner-visual"><div className="banner-signal"><div /><div /><div /><div /><div /><div /></div><div className="banner-label"><Activity size={15} /> SMARTGLOVE / 2025—26</div></div></div></section>
 
-      <section id="team" className="team section-shell section-pad"><SectionHeading eyebrow="07 · Our team" title="Four minds, one mission." >Meet the people turning a research question into a working system.</SectionHeading><div className="team-grid"><div className="supervisor"><span className="eyebrow">Research leadership</span><div className="person-avatar supervisor-avatar">NC</div><h3>Mr. Nelum<br />Chathuranga</h3><p>Supervisor</p><div className="co-supervisor"><div className="person-avatar">SR</div><div><h4>Mr. Samadhi Rathnayake</h4><p>Co-supervisor</p></div></div><span className="supervisor-line" /></div><div className="members">{team.map(([name, id, email, phone], i) => <article className="member" key={id}><div className="person-avatar">{name.split(' ').map(x => x[0]).join('').slice(0, 2)}</div><div><h4>{name}</h4><span className="member-id">{id}</span><a href={`mailto:${email}`}>{email}</a><span>{phone}</span></div><span className="member-num">0{i + 1}</span></article>)}</div></div></section>
+      <section id="team" className="team section-shell section-pad"><SectionHeading eyebrow="07 · Our team" title="Four minds, one mission." >Meet the people turning a research question into a working system.</SectionHeading><div className="team-grid"><div className="supervisor"><span className="eyebrow">Research leadership</span><div className="person-avatar supervisor-avatar"><img src="/assets/nelum%20sir.jpg" alt="Mr. Nelum Chathuranga" /></div><h3>Mr. Nelum<br />Chathuranga</h3><p>Supervisor</p><div className="co-supervisor"><div className="person-avatar"><img src="/assets/samadhi%20sir.jpg" alt="Mr. Samadhi Rathnayake" /></div><div><h4>Mr. Samadhi Rathnayake</h4><p>Co-supervisor</p></div></div><span className="supervisor-line" /></div><div className="members">{team.map(([name, id, email, phone, image], i) => <article className="member" key={id}><div className="person-avatar"><img src={image} alt={name} /></div><div><h4>{name}</h4><span className="member-id">{id}</span><a href={`mailto:${email}`}>{email}</a><span>{phone}</span></div><span className="member-num">0{i + 1}</span></article>)}</div></div></section>
 
       <section id="contact" className="contact section-pad"><div className="section-shell contact-grid"><div><SectionHeading eyebrow="08 · Contact us" title="Let’s start a conversation." >Have a question about our research, or want to know more about SmartGlove? We would love to hear from you.</SectionHeading><a className="contact-email" href="mailto:abeysinghemahi@gmail.com">abeysinghemahi@gmail.com <ArrowUpRight size={18} /></a><div className="contact-details"><span><PhoneIcon />076 662 5010</span><span><MapPin size={17} />SLIIT, Malabe, Sri Lanka</span></div></div><div className="map-card"><div className="map-grid" /><div className="map-pin"><MapPin size={24} /></div><div className="map-label"><span>SLIIT Campus</span><small>Malabe, Sri Lanka</small></div><span className="map-coord">6.9147° N&nbsp;&nbsp; 79.9733° E</span></div></div></section>
     </main>
